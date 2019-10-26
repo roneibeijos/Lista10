@@ -1,0 +1,41 @@
+algoritmo semNome;
+// Síntese
+//  Objetivo:
+//  Entrada :
+//  Saída   :
+
+
+principal
+
+	inteiro indice;
+	inteiro idades[7];
+
+	para(indice de 0 ate 6 passo 1)faca
+
+		idades[indice] =leValidaIdade(indice);
+
+	fimPara
+
+	para(indice de 0 ate 6 passo 1)faca
+		escreval(" ",idades[indice]);
+	fimPara
+
+fimPrincipal
+
+funcao inteiro leValidaIdade(inteiro indice)
+	inteiro idades;
+	faca
+		escreval("Digite a ", indice +1, "ª idade: ");
+		leia(idades);
+		se(idades <0)entao
+			escreval("Digite um valor acima de zero");
+		fimSe
+	enquanto(idades<0);
+	limpaTela();
+	retorna idades;
+
+fimFuncao
+
+
+
+
