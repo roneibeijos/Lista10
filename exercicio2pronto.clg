@@ -1,0 +1,28 @@
+algoritmo semNome;
+// Síntese
+//  Objetivo: Ler a nota de 30 alunos e apresentar em seguida.
+//  Entrada : Notas.
+//  Saída   : Notas.
+
+principal
+	inteiro indice,i;
+	real notas[50],qtdAlunos;
+
+	faca
+		escreval("Digite a quantidade de alunos na escola: ");
+		leia(qtdAlunos);
+		indice=qtdAlunos -1;
+	enquanto(qtdAlunos<=0 ou qtdAlunos>49);
+	
+	para(i de 0 ate indice passo 1)faca
+		escreval("Digite a nota do ", i+1, "º aluno: ");
+		leia(notas[indice]);
+
+	fimPara
+	limpaTela();
+	para(i de 0 ate indice passo 1)faca
+		escreval("NOTA DO ", indice+1, "º ALUNO: ",notas[indice], " PONTO(S)");
+	fimPara
+
+fimPrincipal
+
