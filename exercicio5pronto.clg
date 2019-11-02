@@ -1,0 +1,36 @@
+algoritmo semNome;
+// Síntese
+//  Objetivo: Criar vetor que lê 80 valores e verifica quantas vezes o valor aparece e em quais posições.
+//  Entrada : Valores numéricos.
+//  Saída   : Quantas vezes o valor numérico apareceu e em quais posições.
+
+
+principal
+
+	inteiro elementos[10],indice,contador,numero;
+
+	para(indice de 0 ate 9 passo 1)faca
+		escreval("Digite o ", indice+1, "º numero: ");
+		leia(elementos[indice]);
+	fimPara
+
+	limpaTela();
+	escreval("Digite um numero para procurar no vetor: ");
+	leia(numero);
+	contador=0;
+	para(indice de 0 ate 9 passo 1)faca
+		se(numero == elementos[indice])entao
+			contador=contador+1;
+		fimSe
+	fimPara
+	limpaTela();
+
+	escreval("##### RESULTADOS #####");
+	escreval("O numero aparece: ", contador, "x");
+	para(indice de 0 ate 9 passo 1)faca
+		se(numero == elementos[indice])entao
+			escreval("Numero aparece na posição: ", indice);
+		fimSe
+	fimPara
+
+fimPrincipal
